@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,900&display=swap');
+
+
+
+:root{
+    --gradiant: linear-gradient(180deg, #FFA800 38.02%, #FFE600 100%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #151821;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration:  none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+section{
+    padding: 0px 87px;
+}
+.title{
+    color: #FFE500;
+    font-weight: 700;
+    font-size: 26px;
+}
+.title span{
+    position: relative;
+}
+.title span:after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*menu start*/
+.menu{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.main-nav .menu-item{
+    font-weight: 500;
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: all .3s linear;
+}
+.main-nav .menu-item:hover{
+    color: #FFE500;
+}
+
+.main-nav .menu-item:hover:after{
+    content:'';
+    height: 2px;
+    width: 20px;
+    background: rgb(223, 226, 189);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.menu .buttons a{
+    background: var(--gradiant);
+    padding: 8px 15px;
+    color:#151821;);
+    
+}
+/*menu end*/
+/*banner start*/
+.banner{
+    background: url(../pic/background\ pic\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    padding-top: 200px;
+    position: relative;
+}
+.banner .banner__container{
+    text-align: center;
+    
+}
+.banner .banner__container h1{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner .banner__container h1 span{
+    background: var(--gradiant);
+    color: #151821;
+    padding: 0 10px;
+}
+.banner .banner-bottom{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    transform: translateY(-50%);
+}
+
+.banner .banner-bottom p{
+    position: relative;
+}
+.banner .banner-bottom p:after{
+    content: '';
+    width: 58px;
+    height: 2px;
+    background: var(--gradiant);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*banner end*/
+/*about start*/
+.about .heading span{
+    font-weight: bold;
+    color: rgb(23, 21, 30);
+    background: var(--gradiant);
+    padding: 0 10px;
+    font-size: 40px;
+    padding-right: 30px;
+}
+.about p{
+    font-size: 14px;
+}
+/*about end*/
+/*my team start*/
+.team{
+    background: url(../pic/bg2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.team .member h3{
+    color: #f4cc1c;
+}
+/*my team end*/
+/*match start*/
+.single-match{
+    background: #060506;
+    padding: 10px;
+    border-radius: 60px;
+}
+.single-match h3 span{
+    font-size: 17px;
+    color: #f4cc1c;
+}
+.single-match p{
+    font-weight: 600;
+    font-size: 17px;
+    color: #f4cc1c;
+}
+.single-match p span{
+    font-size: 10px;
+    font-weight: 300;
+    color: white;
+}
+.single-match a{
+    color: #bea017;
+    text-decoration: underline;
+}
+/*match end*/
